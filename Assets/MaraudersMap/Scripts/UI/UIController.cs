@@ -7,11 +7,17 @@ public class UIController : MonoBehaviour
 {
   public static UIController Instance;
 
-  [SerializeField] private CanvasGroup mainUI, titleScreen;
+  public CanvasGroup mainUI, titleScreen;
 
   void Awake()
   {
     Instance = this;
+
+    mainUI.alpha = 0;
+    mainUI.interactable = false;
+
+    titleScreen.alpha = 1;
+    titleScreen.interactable = true;
   }
 
   public void DisplayMainUI()
