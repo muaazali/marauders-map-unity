@@ -4,21 +4,47 @@ using UnityEngine;
 
 public class TitleOnUI : MonoBehaviour
 {
+  public int sortingOrder = 0;
   public string title;
+  public GameObject titlePrefab;
   [SerializeField] private Transform titleLocation;
-  [SerializeField] private GameObject titlePrefab;
 
   private GameObject uiTitleObject;
-  private TMPro.TextMeshProUGUI uiTitleText;
+  private UnityEngine.UI.Text uiTitleText;
 
   private Camera mainCamera;
   private float originalFontSize;
 
-  public void Start()
+  private bool isInit = false;
+
+  void Start()
   {
+    if (title == "")
+    {
+      return;
+    }
+    Initialize();
+  }
+
+  public void Initialize()
+  {
+    if (isInit) return;
+    isInit = true;
+    Debug.Log(name + "bro I just got initialized");
     mainCamera = Camera.main;
     uiTitleObject = Instantiate(titlePrefab, UIController.Instance.mainUI.transform);
-    uiTitleText = uiTitleObject.GetComponentInChildren<TMPro.TextMeshProUGUI>();
+    switch (sortingOrder)
+    {
+      case 1:
+        uiTitleObject.transform.SetParent(UIController.Instance.locationTitles.transform);
+        break;
+      case 2:
+        uiTitleObject.transform.SetParent(UIController.Instance.peopleTitles.transform);
+        break;
+      default:
+        break;
+    }
+    uiTitleText = uiTitleObject.GetComponentInChildren<UnityEngine.UI.Text>();
     uiTitleText.text = title;
     originalFontSize = uiTitleText.fontSize;
   }
@@ -26,6 +52,6 @@ public class TitleOnUI : MonoBehaviour
   void Update()
   {
     uiTitleObject.transform.position = mainCamera.WorldToScreenPoint(titleLocation.position);
-    uiTitleText.fontSize = originalFontSize * (5 / mainCamera.orthographicSize);
+    uiTitleText.fontSize = Mathf.FloorToInt(originalFontSize * (7 / mainCamera.orthographicSize));
   }
 }

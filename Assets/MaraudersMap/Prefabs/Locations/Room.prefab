@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa68a861f11b0142b63cee8f0b01f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sortingOrder: 1
   title: 
   titleLocation: {fileID: 2980477589215313421}
   titlePrefab: {fileID: 4030039233361868004, guid: 9e70a657d01c99c4ea7ca2ba528d21d5, type: 3}
