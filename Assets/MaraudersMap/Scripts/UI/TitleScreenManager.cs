@@ -51,5 +51,6 @@ public class TitleScreenManager : MonoBehaviour
   void RevealGameplay()
   {
     UIController.Instance.DisplayMainUI();
+    GameFlowController.Instance.StartGame();
   }
 }

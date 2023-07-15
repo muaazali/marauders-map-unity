@@ -173,20 +173,12 @@ MonoBehaviour:
   - personAIBehaviour: {fileID: 11400000, guid: befa53da708321f4683689ca4f0e313d, type: 2}
     names:
     - Harry Potter
-    - Hermoine Granger
-    - Ron Weasley
   - personAIBehaviour: {fileID: 11400000, guid: b872b3a66a18b9e46850b4e6d7f68d0c, type: 2}
-    names:
-    - Draco Malfoy
-    - Pansy Parkinson
-    - Crabbe Goyle
+    names: []
   - personAIBehaviour: {fileID: 11400000, guid: 24f81a0a619831c4cb57d0c61fe85e80, type: 2}
-    names:
-    - Minerva McGonagall
-    - Severus Snape
+    names: []
   - personAIBehaviour: {fileID: 11400000, guid: 4c9975ebe8d98b843be82f7778266532, type: 2}
-    names:
-    - Albus Dumbledore
+    names: []
   personPrefab: {fileID: 1435552740931306782, guid: 7735011d586b1db4396317c06a164431, type: 3}
   peopleParent: {fileID: 0}
 --- !u!114 &2868860
@@ -1361,6 +1353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1138131239}
   - component: {fileID: 1138131240}
+  - component: {fileID: 1138131241}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -1435,6 +1428,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1138131241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138131238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1161453059
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,6 +2059,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
   m_PrefabInstance: {fileID: 1709303643}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1805018615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1805018617}
+  - component: {fileID: 1805018616}
+  - component: {fileID: 1805018618}
+  m_Layer: 0
+  m_Name: Navigation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1805018616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805018615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04976799df50f54ba128eff723155a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_HideEditorLogs: 0
+  m_NavMeshData: {fileID: 23800000, guid: 62b14d800d997284b9590c56afc0f61b, type: 2}
+--- !u!4 &1805018617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805018615}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1805018618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805018615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70bd44a44cd62c64fbfc1eea95b24880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideByGrid: 0
+  m_UseMeshPrefab: {fileID: 0}
+  m_CompressBounds: 0
+  m_OverrideVector: {x: 1, y: 1, z: 1}
 --- !u!1 &1846465621
 GameObject:
   m_ObjectHideFlags: 0

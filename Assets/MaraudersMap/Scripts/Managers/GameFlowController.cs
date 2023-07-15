@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class GameFlowController : MonoBehaviour
 {
-  void Start()
+  public static GameFlowController Instance;
+
+  void Awake()
+  {
+    Instance = this;
+  }
+
+  public void StartGame()
   {
     LocationManager.Instance.Initialize();
     PersonSpawner.Instance.Initialize();

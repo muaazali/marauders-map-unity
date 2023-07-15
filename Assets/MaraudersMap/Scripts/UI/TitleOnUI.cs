@@ -30,7 +30,6 @@ public class TitleOnUI : MonoBehaviour
   {
     if (isInit) return;
     isInit = true;
-    Debug.Log(name + "bro I just got initialized");
     mainCamera = Camera.main;
     uiTitleObject = Instantiate(titlePrefab, UIController.Instance.mainUI.transform);
     switch (sortingOrder)

@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: TeacherAIBehaviour
   m_EditorClassIdentifier: 
   personType: 1
-  speed: 5
-  locationsToExplore: []
+  speed: 2
+  locationsToExplore:
+  - Staffroom
+  - Library
+  - GreatHall
   spawnPoints:
   - Staffroom
   - GreatHall
