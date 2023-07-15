@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3c384ec75e43546977bc49a4b1761f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skipTitleScreen: 1
+  skipTitleScreen: 0
 --- !u!114 &2868861
 MonoBehaviour:
   m_ObjectHideFlags: 0

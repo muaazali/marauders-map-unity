@@ -12,6 +12,10 @@ public class GameFlowController : MonoBehaviour
   void Awake()
   {
     Instance = this;
+
+#if !UNITY_EDITOR
+      skipTitleScreen = false;
+#endif
   }
 
   void Start()
