@@ -49,6 +49,11 @@ public class TitleOnUI : MonoBehaviour
       default:
         break;
     }
+    uiTitleObject.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() =>
+    {
+      Debug.Log("Clicked!");
+      CameraController.Instance.SetFollowTarget(transform);
+    });
     uiTitleText = uiTitleObject.GetComponentInChildren<UnityEngine.UI.Text>();
     uiTitleText.text = title;
     originalFontSize = uiTitleText.fontSize;

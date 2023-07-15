@@ -14,6 +14,15 @@ public class CameraController : MonoBehaviour
   Vector3 touchStart;
   Camera mainCamera;
 
+  private Transform followTarget;
+
+  public static CameraController Instance;
+
+  void Awake()
+  {
+    Instance = this;
+  }
+
   void Start()
   {
     mainCamera = Camera.main;
@@ -22,8 +31,13 @@ public class CameraController : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
+    if (followTarget != null)
+    {
+      transform.position = new Vector3(followTarget.position.x, followTarget.position.y, transform.position.z);
+    }
     if (Input.GetMouseButtonDown(0))
     {
+      followTarget = null;
       touchStart = mainCamera.ScreenToWorldPoint(Input.mousePosition);
     }
     if (Input.GetMouseButton(0))
@@ -36,5 +50,11 @@ public class CameraController : MonoBehaviour
         transform.position.z
       );
     }
+  }
+
+  public void SetFollowTarget(Transform target)
+  {
+    Debug.Log("Follow target set.");
+    followTarget = target;
   }
 }
