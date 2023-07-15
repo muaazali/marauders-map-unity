@@ -49,8 +49,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortingOrder: 2
   title: 
-  titleLocation: {fileID: 7072497857386082968}
   titlePrefab: {fileID: 3630571070984069617, guid: f8040085ab9517f44adfb3be48384cb6, type: 3}
+  titleLocation: {fileID: 7072497857386082968}
 --- !u!114 &11207977136061647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,6 +63,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c7a0d7abdfe9234c868ab02322ef272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  personAIBehaviour: {fileID: 0}
+  personName: 
 --- !u!1 &4858772295498370223
 GameObject:
   m_ObjectHideFlags: 0
@@ -75,6 +77,7 @@ GameObject:
   - component: {fileID: 2520556407800391094}
   - component: {fileID: 2122499210683262089}
   - component: {fileID: 5997237002363160506}
+  - component: {fileID: 8242819792303471662}
   m_Layer: 0
   m_Name: GFX
   m_TagString: Untagged
@@ -4928,6 +4931,22 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!58 &8242819792303471662
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4858772295498370223}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1
 --- !u!1 &7053936468473703533
 GameObject:
   m_ObjectHideFlags: 0

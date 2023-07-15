@@ -14,6 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   personType: 0
   speed: 3
-  locationsToExplore: []
-  spawnPoints: []
+  locationsToExplore:
+  - GryffindorCommonRoom
+  - GreatHall
+  - Library
+  - DefenseClassroom
+  - CharmsClassroom
+  - Kitchen
+  spawnPoints:
+  - GryffindorCommonRoom
+  - GreatHall
   titlePrefab: {fileID: 3630571070984069617, guid: f8040085ab9517f44adfb3be48384cb6, type: 3}

@@ -15,5 +15,6 @@ MonoBehaviour:
   personType: 2
   speed: 3
   locationsToExplore: []
-  spawnPoints: []
+  spawnPoints:
+  - HeadmasterOffice
   titlePrefab: {fileID: 3630571070984069617, guid: 0bdab05003417b249a4ae91753cd5cb1, type: 3}

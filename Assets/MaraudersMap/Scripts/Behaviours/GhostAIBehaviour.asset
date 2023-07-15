@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   personType: 3
   speed: 10
-  locationsToExplore: []
+  locationsToExplore:
+  - {fileID: 0}
   spawnPoints: []
   titlePrefab: {fileID: 3630571070984069617, guid: f8040085ab9517f44adfb3be48384cb6, type: 3}

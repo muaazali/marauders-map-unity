@@ -132,7 +132,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2868858}
+  - component: {fileID: 2868860}
   - component: {fileID: 2868859}
+  - component: {fileID: 2868861}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -186,6 +188,97 @@ MonoBehaviour:
     names:
     - Albus Dumbledore
   personPrefab: {fileID: 1435552740931306782, guid: 7735011d586b1db4396317c06a164431, type: 3}
+  peopleParent: {fileID: 0}
+--- !u!114 &2868860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2868857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d3c384ec75e43546977bc49a4b1761f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2868861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2868857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aa4042f304d1b2459ff7191b8e56e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &13553962
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 433203765}
+    m_Modifications:
+    - target: {fileID: 1309002156444010680, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: title
+      value: Slytherin Common Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881997, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_Name
+      value: SlytherinCommonRoom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+--- !u!4 &13553963 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+  m_PrefabInstance: {fileID: 13553962}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &40942632
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,7 +527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6922213669753587834, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
       propertyPath: m_Name
-      value: Great Hall
+      value: GreatHall
       objectReference: {fileID: 0}
     - target: {fileID: 6922213669753587835, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
       propertyPath: m_RootOrder
@@ -487,6 +580,72 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6922213669753587835, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
   m_PrefabInstance: {fileID: 220449752}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &266400191
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 433203765}
+    m_Modifications:
+    - target: {fileID: 5092847095357592090, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: title
+      value: Staff Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600303, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_Name
+      value: Staffroom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+--- !u!4 &266400192 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+  m_PrefabInstance: {fileID: 266400191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &433203764
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,6 +682,13 @@ Transform:
   - {fileID: 1933590709}
   - {fileID: 704607675}
   - {fileID: 450902337}
+  - {fileID: 622409926}
+  - {fileID: 1709303644}
+  - {fileID: 1511581751}
+  - {fileID: 1196068867}
+  - {fileID: 13553963}
+  - {fileID: 266400192}
+  - {fileID: 1221672010}
   m_Father: {fileID: 857216660}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -583,7 +749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3628293499175881997, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
       propertyPath: m_Name
-      value: Arithmancy Classroom
+      value: ArithmancyClassroom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
@@ -676,6 +842,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &622409925
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 433203765}
+    m_Modifications:
+    - target: {fileID: 1309002156444010680, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: title
+      value: Divination Classroom
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.1000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881997, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_Name
+      value: DivinationClassroom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+--- !u!4 &622409926 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+  m_PrefabInstance: {fileID: 622409925}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &704607674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -733,7 +965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3628293499175881997, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
       propertyPath: m_Name
-      value: Transfiguration Classroom
+      value: TransfigurationClassroom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
@@ -923,6 +1155,7 @@ Transform:
   m_Children:
   - {fileID: 833364502}
   - {fileID: 433203765}
+  - {fileID: 1556793685}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1328,6 +1561,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161453059}
   m_CullTransparentMesh: 1
+--- !u!1001 &1196068866
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 433203765}
+    m_Modifications:
+    - target: {fileID: 1309002156444010680, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: title
+      value: Potions Classroom
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.1000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881997, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_Name
+      value: PotionsClassroom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+--- !u!4 &1196068867 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+  m_PrefabInstance: {fileID: 1196068866}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1198213165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1456,6 +1755,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198213165}
   m_CullTransparentMesh: 1
+--- !u!1001 &1221672009
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 433203765}
+    m_Modifications:
+    - target: {fileID: 5092847095357592090, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: title
+      value: Headmaster's Office
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 16.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412263369891600303, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+      propertyPath: m_Name
+      value: HeadmasterOffice
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+--- !u!4 &1221672010 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7412263369891600302, guid: 8bc704baae85e5e4c874b1b3d7c4c11c, type: 3}
+  m_PrefabInstance: {fileID: 1221672009}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1511581750
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 433203765}
+    m_Modifications:
+    - target: {fileID: 4638830316346674639, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
+      propertyPath: title
+      value: Gryffindor Common Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922213669753587834, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
+      propertyPath: m_Name
+      value: GryffindorCommonRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922213669753587835, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922213669753587835, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922213669753587835, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 16.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922213669753587835, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922213669753587835, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922213669753587835, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922213669753587835, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922213669753587835, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922213669753587835, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922213669753587835, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922213669753587835, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
+--- !u!4 &1511581751 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6922213669753587835, guid: e3ddfa637891f6c43a721fb00d35f42f, type: 3}
+  m_PrefabInstance: {fileID: 1511581750}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1527783918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1513,7 +1944,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3628293499175881997, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
       propertyPath: m_Name
-      value: Defense Classroom
+      value: DefenseClassroom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
@@ -1521,6 +1952,103 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
   m_PrefabInstance: {fileID: 1527783918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1556793684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1556793685}
+  m_Layer: 0
+  m_Name: People
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1556793685
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556793684}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 857216660}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1709303643
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 433203765}
+    m_Modifications:
+    - target: {fileID: 1309002156444010680, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: title
+      value: History of Magic Classroom
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628293499175881997, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+      propertyPath: m_Name
+      value: HistoryClassroom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+--- !u!4 &1709303644 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3628293499175881996, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
+  m_PrefabInstance: {fileID: 1709303643}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1846465621
 GameObject:
@@ -1742,7 +2270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3628293499175881997, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
       propertyPath: m_Name
-      value: Charms Classroom
+      value: CharmsClassroom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
@@ -2059,7 +2587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3628293499175881997, guid: 85634704fcc462941ad8011602ed9b72, type: 3}
       propertyPath: m_Name
-      value: Hufflepuff Common Room
+      value: HufflepuffCommonRoom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85634704fcc462941ad8011602ed9b72, type: 3}

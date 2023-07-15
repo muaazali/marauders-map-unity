@@ -15,8 +15,8 @@ public class PersonAIBehaviourScriptableObject : ScriptableObject
 {
   public PersonType personType;
   public float speed;
-  public List<Transform> locationsToExplore;
-  public List<Transform> spawnPoints;
+  public List<string> locationsToExplore;
+  public List<string> spawnPoints;
 
   [Header("Prefabs")]
   public GameObject titlePrefab;

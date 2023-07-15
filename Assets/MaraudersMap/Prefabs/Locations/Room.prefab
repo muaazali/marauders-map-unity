@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 137772137341870796}
   m_Layer: 0
   m_Name: Room
-  m_TagString: Untagged
+  m_TagString: NamedLocation
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,8 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortingOrder: 1
   title: 
-  titleLocation: {fileID: 2980477589215313421}
   titlePrefab: {fileID: 4030039233361868004, guid: 9e70a657d01c99c4ea7ca2ba528d21d5, type: 3}
+  titleLocation: {fileID: 2980477589215313421}
 --- !u!1 &6354006384238376623
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,5 +15,8 @@ MonoBehaviour:
   personType: 1
   speed: 5
   locationsToExplore: []
-  spawnPoints: []
+  spawnPoints:
+  - Staffroom
+  - GreatHall
+  - Library
   titlePrefab: {fileID: 3630571070984069617, guid: 019a7abffca1fcc4682d9e4c216dce2a, type: 3}
