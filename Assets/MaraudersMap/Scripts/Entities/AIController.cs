@@ -38,17 +38,17 @@ public class AIController : MonoBehaviour
     }
     if (waitingForNextDestination)
     {
-      if (agent.remainingDistance < 0.5f)
+      if (agent.remainingDistance < 1f)
       {
-        agent.SetDestination(transform.position + new Vector3(Random.Range(-5f, 5f), Random.Range(-5f, 5f), 0f));
+        agent.SetDestination(transform.position + new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f), 0f));
       }
     }
     else
     {
-      if (agent.remainingDistance < 0.5f)
+      if (agent.remainingDistance < 1f)
       {
         waitingForNextDestination = true;
-        Invoke("SetNextDestination", 5f);
+        Invoke("SetNextDestination", 10f);
       }
     }
   }

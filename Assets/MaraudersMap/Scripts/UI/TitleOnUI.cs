@@ -14,8 +14,15 @@ public class TitleOnUI : MonoBehaviour
 
   private Camera mainCamera;
   private float originalFontSize;
+  private Vector3 titleOffset;
 
   private bool isInit = false;
+
+  void Awake()
+  {
+    mainCamera = Camera.main;
+    titleOffset = titleLocation.localPosition;
+  }
 
   void Start()
   {
@@ -30,7 +37,6 @@ public class TitleOnUI : MonoBehaviour
   {
     if (isInit) return;
     isInit = true;
-    mainCamera = Camera.main;
     uiTitleObject = Instantiate(titlePrefab, UIController.Instance.mainUI.transform);
     switch (sortingOrder)
     {
@@ -50,7 +56,7 @@ public class TitleOnUI : MonoBehaviour
 
   void Update()
   {
-    uiTitleObject.transform.position = mainCamera.WorldToScreenPoint(titleLocation.position);
+    uiTitleObject.transform.position = mainCamera.WorldToScreenPoint(transform.position + titleOffset);
     uiTitleText.fontSize = Mathf.FloorToInt(originalFontSize * (7 / mainCamera.orthographicSize));
   }
 }
