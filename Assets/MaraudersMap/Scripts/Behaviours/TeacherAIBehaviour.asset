@@ -18,6 +18,12 @@ MonoBehaviour:
   - Staffroom
   - Library
   - GreatHall
+  - DivinationClassroom
+  - DefenseClassroom
+  - CharmsClassroom
+  - TransfigurationClassroom
+  - PotionsClassroom
+  - ArithmancyClassroom
   spawnPoints:
   - Staffroom
   - GreatHall
